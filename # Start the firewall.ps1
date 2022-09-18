@@ -6,3 +6,5 @@ $publicip1 = Get-AzPublicIpAddress -Name "aifwpublicip" -ResourceGroupName "AI-R
 $azfw.Allocate($vnet,@($publicip1))
 
 Set-AzFirewall -AzureFirewall $azfw
+
+# Successfully started
